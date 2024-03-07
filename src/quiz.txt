@@ -1,3 +1,11 @@
 a. int 5
-b. float 5.0
-c. long
+b. double 5.0
+c. long 4
+d. int 12
+e. double 8.0
+f. float 8.0
+g. double 4.0
+h. long 18
+i. int 3
+j. double 4.5
+k. int 1

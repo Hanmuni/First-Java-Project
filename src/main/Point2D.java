@@ -44,7 +44,7 @@ public class Point2D {
         return new Point2D(this.x * factor, this.y * factor);
     }
 
-    // Methode zum Dividieren durch einen Divisor
+    // Division
     public Point2D divide(double divisor) {
         return new Point2D(this.x / divisor, this.y / divisor);
 
@@ -55,4 +55,6 @@ public class Point2D {
         return "[" + x + ", " + y + "]";
     }
 
+    public double distance(Point2D b) {
+    }
 }

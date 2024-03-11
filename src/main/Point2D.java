@@ -29,11 +29,6 @@ public class Point2D {
         this.y = y;
     }
 
-    // in String formattieren
-    public String toString() {
-        return "[" + x + ", " + y + "]";
-    }
-
     // Addition
     public Point2D add(Point2D otherPoint) {
         return new Point2D(this.x + otherPoint.getX(), this.y + otherPoint.getY());
@@ -51,8 +46,13 @@ public class Point2D {
 
     // Methode zum Dividieren durch einen Divisor
     public Point2D divide(double divisor) {
-            return new Point2D(this.x / divisor, this.y / divisor);
+        return new Point2D(this.x / divisor, this.y / divisor);
 
+    }
+
+    // in String formattieren
+    public String toString() {
+        return "[" + x + ", " + y + "]";
     }
 
 }

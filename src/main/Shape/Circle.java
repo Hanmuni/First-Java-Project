@@ -1,3 +1,7 @@
+package Shape;
+
+import Dimensions.Point2D;
+
 public class Circle extends Shape {
     // Variable Kreisform
     private double radius;

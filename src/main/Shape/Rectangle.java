@@ -1,3 +1,7 @@
+package Shape;
+
+import Dimensions.Point2D;
+
 public class Rectangle extends Shape {
     // Variablen Rechteckform
     private Point2D a;

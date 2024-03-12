@@ -1,7 +1,9 @@
+package Dimensions;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Vector3DTest {
     private Vector3D vector1;

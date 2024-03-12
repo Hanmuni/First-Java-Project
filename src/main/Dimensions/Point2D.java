@@ -1,3 +1,5 @@
+package Dimensions;
+
 public class Point2D {
 
     //Variablen Koordinaten

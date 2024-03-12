@@ -1,3 +1,7 @@
+package Shape;
+
+import Dimensions.Point2D;
+import Shape.Triangle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

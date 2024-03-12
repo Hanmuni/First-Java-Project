@@ -1,3 +1,6 @@
+package Shape;
+
+import Dimensions.Point2D;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

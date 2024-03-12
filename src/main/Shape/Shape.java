@@ -1,3 +1,5 @@
+package Shape;
+
 public abstract class Shape {
     // Abstrakte Klasse für Geometrisches Objekt
 

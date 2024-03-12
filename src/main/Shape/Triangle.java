@@ -1,3 +1,7 @@
+package Shape;
+
+import Dimensions.Point2D;
+
 public class Triangle extends Shape {
     // Variablen Dreieckform
     // 3 Punkte

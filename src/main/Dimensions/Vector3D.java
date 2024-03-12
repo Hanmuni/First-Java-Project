@@ -1,3 +1,5 @@
+package Dimensions;
+
 import java.util.Objects;
 
 public class Vector3D {

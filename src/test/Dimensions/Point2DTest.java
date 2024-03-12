@@ -1,3 +1,6 @@
+package Dimensions;
+
+import Dimensions.Point2D;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

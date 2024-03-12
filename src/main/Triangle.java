@@ -1,4 +1,4 @@
-public class Triangle implements Shape {
+public class Triangle extends Shape {
     // Variablen Dreieckform
     // 3 Punkte
     private Point2D a;

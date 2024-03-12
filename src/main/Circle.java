@@ -1,4 +1,4 @@
-public class Circle implements Shape {
+public class Circle extends Shape {
     // Variable Kreisform
     private double radius;
     private Point2D center;

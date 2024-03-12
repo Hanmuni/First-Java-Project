@@ -1,4 +1,4 @@
-public class Rectangle implements Shape {
+public class Rectangle extends Shape {
     // Variablen Rechteckform
     private Point2D a;
     private Point2D b;

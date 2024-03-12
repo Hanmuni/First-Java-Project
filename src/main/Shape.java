@@ -1,9 +1,9 @@
-public interface Shape {
-    // Interface für Geometrisches Objekt
+public abstract class Shape {
+    // Abstrakte Klasse für Geometrisches Objekt
 
     // Methode Flächeninhalt
-    double formArea();
+    abstract double formArea();
 
     //Methode Umfang
-    double formCircumference();
+    abstract double formCircumference();
 }

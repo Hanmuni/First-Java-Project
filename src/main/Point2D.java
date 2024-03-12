@@ -55,4 +55,11 @@ public class Point2D {
         return "[" + x + ", " + y + "]";
     }
 
+    public double distance(Point2D point) {
+        double distanceX = point.getX() - this.getX(); // other point x - current point x
+        double distanceY = point.getY() - this.getY(); // other point y - current point y
+
+        return Math.sqrt(distanceX * distanceX + distanceY * distanceY); // wurzel(distanceX^2 + distanceY^2)
+    }
+
 }

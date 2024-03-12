@@ -23,8 +23,6 @@ public class Rectangle implements Shape {
         return AB * BC;
     }
 
-    }
-
     @Override
     public double formCircumference() {
         //Umfang
@@ -32,4 +30,6 @@ public class Rectangle implements Shape {
         double BC = b.distance(c);
         return 2 * (AB + BC);
     }
+
 }
+

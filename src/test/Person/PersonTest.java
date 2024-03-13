@@ -31,6 +31,5 @@ class PersonTest {
         String result2 = map.get(B);
         assertEquals("ValueA", result1);
         assertEquals("ValueA", result2);
-
     }
 }

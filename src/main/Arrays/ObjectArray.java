@@ -1,19 +1,23 @@
 package Arrays;
 
-public class IntArray {
-    private int[] array;
+public class ObjectArray<T> {
+    private T[] array;
     private int count;
 
-    public IntArray(int size) {
-        array = new int[size];
+    public ObjectArray() {
+        array = (T[]) new Object[10];
+        count = 0;
+    }
+    public ObjectArray(int size) {
+        array = (T[]) new Object[size];
         count = 0;
     }
 
     // add Methode
-    public void add(int element) {
+    public void add(T element) {
         //Überprüfe ob genügen Plätze im Array frei sind
         if (this.count >= array.length) { // If Zähler größer als Array
-            int[] newArray = new int[array.length * 2]; // neues Array mit doppelter Kapazität
+            T[] newArray = (T[]) new Object[array.length * 2]; // neues Array mit doppelter Kapazität
 
             for (int i = 0; i < array.length; i++) {
                 newArray[i] = this.array[i]; // kopiere alte Werte in neues Array
@@ -27,7 +31,7 @@ public class IntArray {
     }
 
     // get Methode
-    public int getIndex(int index) {
+    public T get(int index) {
         return array[index];
     }
 

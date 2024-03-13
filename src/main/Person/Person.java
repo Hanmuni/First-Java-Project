@@ -2,7 +2,7 @@ package Person;
 
 import java.util.Objects;
 
-public class Person implements Cloneable {
+public class Person extends CloneableObject {
 
     private Integer age;
     private String firstname;
@@ -70,10 +70,6 @@ public class Person implements Cloneable {
     public int hashCode() {
         return Objects.hash(age, firstname, lastname, height, weight);
     }
-
-    // Shallow Clone Methode
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
+    
 
 }

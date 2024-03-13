@@ -4,17 +4,17 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class IntArrayTest {
-    IntArray intArray1 = new IntArray(5);
+class ObjectArrayTest {
+    ObjectArray<Integer> intArray1 = new ObjectArray<>(5);
 
     @Test
     void add() {
         intArray1.add(15);
         intArray1.add(13);
         intArray1.add(18);
-        int result1 = intArray1.getIndex(0);
-        int result2 = intArray1.getIndex(1);
-        int result3 = intArray1.getIndex(2);
+        int result1 = intArray1.get(0);
+        int result2 = intArray1.get(1);
+        int result3 = intArray1.get(2);
         int expected1 = 15;
         int expected2 = 13;
         int expected3 = 18;

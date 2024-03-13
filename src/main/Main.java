@@ -1,24 +1,26 @@
+import Arrays.ObjectArray;
+
+import java.util.ArrayList;
+import java.util.List;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Character[] day = new Character[7]; // Array
+        ObjectArray<String> strings = new ObjectArray<>();
+        strings.add("Montag");
+        strings.add("Dienstag");
 
-        day[0] = 'M';
-        day[1] = 'T';
-        day[2] = 'W';
-        day[3] = 'T';
-        day[4] = 'F';
-        day[5] = 'S';
-        day[6] = 'S';
+        ObjectArray<Integer> integers = new ObjectArray<>();
+        integers.add(5);
+        integers.add(15);
 
-        System.out.println("Today is "+ day[0]);
-        System.out.println("Today is "+ day[1]);
-        System.out.println("Today is "+ day[2]);
-        System.out.println("Today is "+ day[3]);
-        System.out.println("Today is "+ day[4]);
-        System.out.println("Today is "+ day[5]);
-        System.out.println("Today is "+ day[6]);
+        ObjectArray<Double> doubles = new ObjectArray<>(10);
+        doubles.add(10.0);
+        doubles.add(20.0);
 
+        List<Integer> numbers = new ArrayList<>(10);
+        numbers.add(5);
+        numbers.add(15);
     }
 }

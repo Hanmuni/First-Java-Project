@@ -1,8 +1,9 @@
 package Person;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Person extends CloneableObject {
+public class Person extends CloneableObject implements Comparable<Person> {
 
     private Integer age;
     private String firstname;
@@ -70,6 +71,21 @@ public class Person extends CloneableObject {
     public int hashCode() {
         return Objects.hash(age, firstname, lastname, height, weight);
     }
-    
+
+    @Override
+    public int compareTo(Person otherPerson) {
+        int ageComparison = this.age.compareTo(otherPerson.age);
+        double heightComparison = this.height.compareTo(otherPerson.height);
+
+        if (ageComparison != 0) {
+            return ageComparison;
+        } else {
+            return Double.compare(heightComparison, 0);
+        }
+    }
+
+    public static Comparator<Person> ageComparator = Comparator.comparing(Person::getAge);
+    public static Comparator<Person> heightComparator = Comparator.comparing(Person::getHeight);
+
 
 }

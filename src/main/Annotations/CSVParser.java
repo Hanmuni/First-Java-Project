@@ -8,7 +8,6 @@ public class CSVParser<T> {
     private String delimiter = ";";
     private String newLine = "\n";
     private Class<T> clazz;
-    private boolean headerPrinted = false;
 
     public CSVParser(Class<T> clazz) {
         this.clazz = clazz;

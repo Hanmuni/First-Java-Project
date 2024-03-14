@@ -1,7 +1,10 @@
 package Person;
 
+import java.lang.reflect.Field;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Objects;
+import java.util.Arrays;
 
 public class Person extends CloneableObject implements Comparable<Person> {
 
@@ -87,5 +90,13 @@ public class Person extends CloneableObject implements Comparable<Person> {
     public static Comparator<Person> ageComparator = Comparator.comparing(Person::getAge);
     public static Comparator<Person> heightComparator = Comparator.comparing(Person::getHeight);
 
+    // Reflections
+    public static void main(String[] args) {
+        List<Field> allFields = Arrays.asList(Person.class.getDeclaredFields());
 
+        for (Field field : allFields) {
+            System.out.println("Field name: " + field.getName());
+            System.out.println("Field type: " + field.getType());
+        }
+    }
 }
